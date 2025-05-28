@@ -38,10 +38,8 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    fun deleteItem(index: Int) {
-        if (index in itemList.indices) {
-            itemList = itemList.toMutableList().apply { removeAt(index) }
-        }
+    fun deleteItem(word: String) {
+        itemList = itemList.filter { it != word }.toMutableList()
     }
 
     fun toggleSortOrder() {

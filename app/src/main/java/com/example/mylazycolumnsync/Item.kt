@@ -23,8 +23,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun ListItem(
     value: String,
-    index: Int,
-    onDeleteClick: (Int) -> Unit
+    onDeleteClick: () -> Unit
 ) {
     Row(
         modifier = Modifier
@@ -42,7 +41,7 @@ fun ListItem(
             fontSize = 18.sp,
             modifier = Modifier.weight(1f)
         )
-        IconButton(onClick = { onDeleteClick(index) }) {
+        IconButton(onClick =  onDeleteClick ) {
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Delete",
