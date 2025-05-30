@@ -10,6 +10,7 @@ activityCompose = "1.10.1"
 composeBom = "2024.09.00"
 material = "1.8.2"
 navigationUi = "2.9.0"
+roomCompilerVersion = "2.6.1"
 roomKtx = "2.7.1"
 roomCompiler = "2.7.1"
 
@@ -18,6 +19,7 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 androidx-navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationUi" }
+androidx-room-compiler-v261 = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

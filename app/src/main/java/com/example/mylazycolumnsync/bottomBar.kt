@@ -1,4 +1,4 @@
-package com.example.mylazycolumnsync.ui.theme
+package com.example.mylazycolumnsync
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -12,7 +12,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mylazycolumnsync.MainViewModel
 import kotlinx.coroutines.launch
 
 @Composable
@@ -33,7 +32,7 @@ fun BottomBar() {
             Text("Scroll to Top")
         }
         Button(onClick = {
-            scope.launch { lazyListState.animateScrollToItem(viewModel.itemList.lastIndex) }
+            scope.launch { lazyListState.animateScrollToItem(viewModel.sortedWords.value.size - 1) }
         }) {
             Text("Scroll to Bottom")
         }

@@ -41,7 +41,7 @@ fun ListItem(
             fontSize = 18.sp,
             modifier = Modifier.weight(1f)
         )
-        IconButton(onClick =  onDeleteClick ) {
+        IconButton(onClick = onDeleteClick) {
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Delete",
